@@ -1,3 +1,4 @@
+// Binary Search
 function binarySearch(array, targetValue) {
     let sortedArray = [...array];
     sortedArray.sort((a, b) => a - b);
@@ -25,6 +26,7 @@ function binarySearch(array, targetValue) {
     return -1;
 }
 
+// Linear Search
 function linearSearch(array, targetValue) {
     let guess = -1;
     let totalGuesses = 0;
