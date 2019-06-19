@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <title>Cipher</title>
     <script src="simpleReplacement.js"></script>
+    <script src="caesar.js"></script>
+    <script src="characterFrequency.js"></script>
+    <script src="distributedSecret.js"></script>
+    <script src="playfair.js"></script>
 </head>
 <body>
     <button onclick="console.log(simpleReplacement(prompt('Plain Text'), prompt('Key')))">Simple Replacement Cipher</button>
+    <button onclick="console.log(caesar(prompt('Plain Text'), 3))">Caesar Cipher</button>
+    <div id="chartContainer" style="height: 360px; width: 100%;"></div>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <button id="frequency">Character Frequency</button>
+    <script>
+        document.getElementById("frequency").onclick = function () {
+            let chart = new CanvasJS.Chart("chartContainer",
+                {
+                    title: {
+                        text: "Character Frequency"
+                    },
+                    axisX: {
+                        interval: 1,
+                    },
+                    data: [{
+                        dataPoints: getFrequency('NASA or the National Aeronautics and Space Administration is the part of the United States government that deals with space exploration and aeronautics, the operating and designing of planes.')
+                    }]
+                });
+            chart.render();
+        }
+    </script>
+    <button onclick="console.log(distributedSecret(prompt('import decimal number')))">Distributed Secret</button>
+    <button onclick="console.log(playfairCipher('playfair', 'meet me at noon'))">Playfair Cipher</button>
 </body>
 </html>
