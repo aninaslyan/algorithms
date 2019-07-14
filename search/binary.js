@@ -1,4 +1,3 @@
-// Binary Search
 function binarySearch(array, targetValue) {
     let sortedArray = [...array];
     sortedArray.sort((a, b) => a - b);
@@ -24,21 +23,4 @@ function binarySearch(array, targetValue) {
     }
 
     return -1;
-}
-
-// Linear Search
-function linearSearch(array, targetValue) {
-    let guess = -1;
-    let totalGuesses = 0;
-
-    console.log(array, targetValue);
-    array.forEach((val, index) => {
-        totalGuesses++;
-        if (val === targetValue) {
-            console.log(totalGuesses, "totalGuesses");
-            guess = index;
-        }
-    });
-
-    return guess;
 }
