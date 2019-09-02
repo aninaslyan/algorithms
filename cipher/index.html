@@ -10,8 +10,8 @@
     <script src="playfair.js"></script>
 </head>
 <body>
-    <button onclick="console.log(simpleReplacement(prompt('Plain Text'), prompt('Key')))">Simple Replacement Cipher</button>
-    <button onclick="console.log(caesar(prompt('Plain Text'), 3))">Caesar Cipher</button>
+    <button onclick="console.log(simpleReplacement(prompt('Plain Text', 'This is a secret text'), prompt('Key', 'information')))">Simple Replacement Cipher</button>
+    <button onclick="console.log(caesar(prompt('Plain Text', 'Always!Look\\on_-the%-Bright&Side6of#Life'), Number(prompt('Step', 3))))">Caesar Cipher</button>
     <div id="chartContainer" style="height: 360px; width: 100%;"></div>
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <button id="frequency">Character Frequency</button>
