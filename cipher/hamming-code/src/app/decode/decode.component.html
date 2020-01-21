@@ -1,0 +1,27 @@
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+   <div class="card">
+      <div class="card-body">
+         <div class="row">
+            <div class="col-xs-12 col-md-10 col-sm-12 col-lg-12">
+               <div class="form-group">
+                  <label for="palabraCError">Input binary number to Decode </label>
+
+                  <input type="text" id="palabraCError" class="form-control" #inputVal>
+               </div>
+               <button
+                  class="btn btn-primary"
+                  (click)="onDecodeClick(inputVal)"
+               >Decode
+               </button>
+            </div>
+            <div
+               class="col-xs-12 col-md-10 col-sm-12 col-lg-12"
+               *ngIf="decodedValue && decodedValue.length > 0"
+            >
+               <br>
+               <h4>{{decodedValue}}</h4>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

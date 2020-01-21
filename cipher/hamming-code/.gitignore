@@ -1,0 +1,4 @@
+# ignoring idea directory
+.idea
+
+node_modules

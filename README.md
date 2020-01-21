@@ -6,6 +6,7 @@
     * Distributed Secret
     * Playfair
     * Simple Replacement
+    * Hamming Code (with UI)
 - Search
     * Linear
     * Binary
