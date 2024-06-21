@@ -15,7 +15,7 @@ function selectionSort(array) {
     let sortedArray = [...array];
     let minIndex = 0;
 
-    for (let i = 0; i < sortedArray.length - 1; i++) { // Optimisation 1
+    for (let i = 0; i < sortedArray.length - 1; i++) { // Optimisation 1:
         minIndex = indexOfMinimum(sortedArray, i);
         if (minIndex !== i) { // if the indexes are equal, no need to swap as no difference will occur
             swap(sortedArray, i, minIndex);
@@ -25,4 +25,4 @@ function selectionSort(array) {
     return sortedArray;
 }
 
-// 1: (n - 1), because the last element will already be in the end after (n - 1)th iteration (the same as in bubble sort Optimisation1)
+// 1: (n - 1), because the last element will already be in the end after (n - 1)th iteration (the same as in bubble sort Optimisation 1:)
