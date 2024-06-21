@@ -13,7 +13,7 @@ Types of Algorithms:
     * **Hamming Code** (with UI) - detects and corrects errors in the transmitted data.
 - **Search**
     * **Linear** - `O(n)` - iterates through each element in the array from the start to the end.
-    * **Binary** - `O(log n)` - searches for an element in a sorted array by dividing the array in half at each step.
+    * **Binary** - `O(log n)` - searches for an element in a _sorted array_ by dividing the array in half at each step.
 - **Sort**
     * **Selection** - `O(n^2)` - selects the smallest (or biggest) element from the unsorted portion of the array and swaps it with the first (or last) unsorted element.
     * **Insertion** - `O(n^2)` - builds the sorted array one element at a time by comparing each element with the rest of the array.
